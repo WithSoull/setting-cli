@@ -9,7 +9,7 @@ return {
         endpoint = "https://openrouter.ai/api/v1",
         model = "deepseek/deepseek-chat-v3-0324:free",
         timeout = 30000,
-        api_key = "<CREATE YOUR OWN API KEY ON WEBSITE https://openrouter.ai/deepseek/deepseek-chat-v3-0324:free/api>",
+        api_key = os.getenv("OPENAI_API_KEY"),
         extra_request_body = {
           temperature = 0,
           max_completion_tokens = 8192,
