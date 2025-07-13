@@ -5,8 +5,8 @@ return {
   opts = {
     enabled = true,
     trigger_events = {
-      immediate_save = { "BufLeave", "FocusLost", "QuitPre", "VimSuspend" },
-      defer_save = { "InsertLeave", "TextChanged" },
+      immediate_save = { "BufLeave", "FocusLost", "QuitPre", "VimSuspend" }, --Events for immediate saving
+      defer_save = { "InsertLeave", "TextChanged" }, -- Events for saving in 1 sec after  
       cancel_deferred_save = { "InsertEnter" },
     },
     -- Condition to save buffer
