@@ -40,7 +40,8 @@ return {
         completeopt = 'menu,menuone,noinsert',
       },
 
-      -- Show the source
+      --[[ 
+      Shows the source
       formatting = {
         format = function(entry, vim_item)
           vim_item.menu = ({
@@ -53,7 +54,8 @@ return {
           return vim_item
         end,
       },
-     
+      --]]
+      
       mapping = cmp.mapping.preset.insert {
         ['<C-j>'] = cmp.mapping.select_next_item(), -- next suggestion
         ['<C-k>'] = cmp.mapping.select_prev_item(), -- previous suggestion
