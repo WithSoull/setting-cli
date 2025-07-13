@@ -40,7 +40,7 @@ return {
         completeopt = 'menu,menuone,noinsert',
       },
 
-      --[[ 
+      --[[
       Shows the source
       formatting = {
         format = function(entry, vim_item)
